@@ -682,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 205034294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 0.8, z: -9.36}
+  m_LocalPosition: {x: 5.72, y: 0.8, z: 0.06}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5909,7 +5909,7 @@ MonoBehaviour:
   investigateSpeed: 3
   chaseSpeed: 4.2
   viewRange: 14
-  viewAngle: 100
+  viewAngle: 75
   eyeHeight: 0.6
   targetHeight: 0.5
   sneakViewMultiplier: 0.6
