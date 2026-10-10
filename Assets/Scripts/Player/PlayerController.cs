@@ -78,6 +78,16 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        // Si la partida terminó, el jugador no recibe más entrada
+        // y no se vuelve a capturar el cursor (lo necesitan los botones).
+        if (GameManager.Instance != null &&
+            GameManager.Instance.State != GameManager.GameState.Playing)
+        {
+            CurrentMode = MoveMode.Idle;
+            NoiseRadius = idleNoise;
+            return;
+        }
+
         HandleCursor();
 
         if (!InputEnabled)
